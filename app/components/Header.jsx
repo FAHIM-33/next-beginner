@@ -11,7 +11,7 @@ function Header() {
                 <Logo></Logo>
                 <div className="flex">
                     <Cl2 link='/docs'>Docs</Cl2>
-                    <Cl2 link='/perallel-routing'>Perallel routes</Cl2>
+                    <Cl2 link='/gellary'>Perallel routes</Cl2>
 
                 </div>
                 <Searchbar />

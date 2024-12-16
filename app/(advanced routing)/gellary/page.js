@@ -9,7 +9,7 @@ function PerallelRoutingPage() {
             <div className="p-4 flex gap-4 justify-center">
                 {
                     imgs?.map((im, i) =>
-                        <Link href={`/perallel-routing/${im.id}`} key={i} className="p-10 bg-gray-800 rounded-sm hover:bg-gray-900">{im?.name}</Link>
+                        <Link href={`/gellary/${im.id}`} key={i} className="p-10 bg-gray-800 rounded-sm hover:bg-gray-900">{im?.name}</Link>
                     )
                 }
 
