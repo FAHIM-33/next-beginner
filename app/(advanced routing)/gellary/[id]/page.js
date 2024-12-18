@@ -1,13 +1,12 @@
-import React from 'react';
-import { imgs } from '../data';
+// import { imgs } from '../data';
 
 function ImageDetailsPage({ params }) {
     const { id } = params
-    const data = imgs?.find((im) => (im.id.toString() === id))
-    console.log(id, data);
+    // const data = [123]?.find((im) => (im.id.toString() === id))
+    // console.log(id, data);
     return (
         <div>
-            <p>{data?.name}</p>
+            <p>Modal</p>
         </div>
     );
 }

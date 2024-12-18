@@ -1,9 +1,9 @@
-import React from 'react';
 
-function AdvancedRoutingLayout({ children }) {
+function AdvancedRoutingLayout({ children, modal }) {
     return (
         <div>
             {children}
+            {modal}
         </div>
     );
 }
