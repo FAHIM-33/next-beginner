@@ -1,9 +1,11 @@
 import comments from "@/app/(API)/data/data";
 
-export async function GET(_request, { params }) {
+export async function GET(request, { params }) {
     const commentId = params.id
+
     const comment = comments.find(com => com.id.toString() === commentId.toString())
     return Response.json(comment)
+
 }
 
 export async function PATCH(request, { params }) {

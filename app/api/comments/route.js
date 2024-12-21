@@ -1,8 +1,16 @@
 import comments from "@/app/(API)/data/data"
 import { headers } from "next/headers";
 
-export async function GET() {
-    return Response.json(comments)
+export async function GET(request) {
+    const searchParams = request.nextUrl.searchParams
+    const query = searchParams.get('query')
+
+    if (query) {
+        const filteredComments = comments.filter(com => com.text.toLowerCase().includes(query.toLowerCase()))
+        return Response.json(filteredComments)
+    } else {
+        return Response.json(comments)
+    }
 }
 
 export async function POST(req) {
