@@ -8,7 +8,7 @@ export function middleware(req) {
 
     return NextResponse.redirect(new URL('/posts/2', req.url))
 
-    // return NextResponse.next()
+    // return NextResponse.next() 
 }
 export const config = {
     matcher: "/dashboard"
