@@ -9,7 +9,7 @@ export function middleware(req) {
     return NextResponse.redirect(new URL('/posts/2', req.url))
 
     // return NextResponse.next() 
-    // a;ldkfjasdklasdlasd
+    // a;ldkfjasdklasdlasdd
 }
 export const config = {
     matcher: "/dashboard"
